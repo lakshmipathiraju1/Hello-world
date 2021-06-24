@@ -1,6 +1,3 @@
-# Pull base image 
-From tomcat:8-jre8 
-
-# Maintainer 
-MAINTAINER "lakshmipathiraju.vegesna37@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+FROM tomcat:8.0.20-jre8
+# Dummy text to test 
+COPY target/java-web-app*.war /usr/local/tomcat/webapps/java-web-app.war
